@@ -12,7 +12,7 @@ GW_CMD = $(GW) $(GFLAGS)
 GW_OPT_DISABLE_LOCAL=
 
 format: ## Formats source code
-	$(GW_CMD) formatKotlin
+	$(GW_CMD) ktlintFormat
 
 publish-local: ## Clans, bulds, and publishes the Codegen artifacts to mavenLocal, as a SNAPSHOT.
 	$(GW_CMD) $(GW_OPT_DISABLE_LOCAL) clean build publishToMavenLocal
